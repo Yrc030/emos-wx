@@ -1,0 +1,37 @@
+@import url("@/style.less");
+
+/*
+<view class="page">
+	<view class="header">
+		<view class="time">{{sendTime}}</view>
+		<view class="delete-btn" @tap="deleteMsg">删除</view>
+	</view>
+	<view class="message-container">
+		<text class="message"></text>
+	</view>
+</view>
+*/
+
+.page {
+	padding: 0 50rpx;
+	padding-top: 100rpx;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	font-size: 30rpx;
+	.time {
+		color: @desc-color,
+	}
+	.delete-btn {
+		color: #e6282c;
+	}
+}
+
+.message-container {
+	margin-top: 20rpx;
+	border-radius: 20rpx;
+	background-color: #f5f5f5;
+	padding: 30rpx 50rpx;
+}

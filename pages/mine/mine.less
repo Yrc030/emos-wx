@@ -1,0 +1,75 @@
+@import url("@/style.less");
+
+.page {
+	padding: 35rpx;
+}
+
+.user-summary {
+	margin-top: 50rpx;
+	padding-bottom: 20rpx;
+	.border-outer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 40rpx;
+		width: 320rpx;
+		height: 320rpx;
+		background-color:  #fbe3e1;
+		border-radius: 50%;
+		.border-inner {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 280rpx;
+			height: 280rpx;
+			background-color: #f5b8b4;
+			border-radius: 50%;
+			.photo {
+				display: block;
+				width: 200rpx;
+				height: 200rpx;
+				border: 20rpx solid #ec7872;
+				border-radius: 50%;
+			}
+		}
+	}
+	.summary {
+		display: flex;
+		justify-content: space-between;
+		padding: 15rpx 0;
+		background-color: #f5f5f5;
+		
+		view {
+			text-align: center;
+			flex-grow: 1;
+			flex-shrink: 1;
+			
+			&:nth-child(2) {
+				border-left: 2rpx solid #e0e0e0;
+				border-right: 2rpx solid #e0e0e0;
+			}
+			.title {
+				display: block;
+				margin-bottom: 10rpx;
+				font-size: 28rpx;
+				color: @desc-color;
+			}
+			.value {
+				display: block;
+				font-size: 32rpx;
+				color: @font-color;
+			}
+		}
+	}
+}
+
+.list-title {
+	margin: 35rpx 0;
+	padding-left: 20rpx;
+	font-size: 32rpx;
+	font-weight: bold;
+	color: @background-color;
+	border-left: 15rpx solid @background-color;
+}
