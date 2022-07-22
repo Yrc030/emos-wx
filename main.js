@@ -14,11 +14,10 @@ app.$mount()
 
 
 // 定义全局的请求路径
- let baseUrl = "https://yrc.life/emos-wx-api"
-//let baseUrl = "http://192.168.10.3:8080/emos-wx-api"
+ let baseUrl = "emos-wx-api后端项目路径"
 Vue.prototype.tencent = {
 	trtc: {
-		appid: "1400702946"
+		appid: "您的appid"
 	}
 }
 Vue.prototype.url = {
@@ -153,18 +152,7 @@ Vue.prototype.ajax = function(url, method, data, callback) {
 
 
 
-// Vue.prototype.checkPermission = function(perms) {
-// 	let permission = uni.getStorageSync("permission")
-// 	let result = false;
-// 	for (let one of perms) {
-// 		if (permission.indexOf(one) != -1) {
-// 			result = true;
-// 			break;
-// 		}
-// 	}
-// 	return result;
-// }
-// 定义全局权限验证
+
 Vue.prototype.checkPermission = function(perms) {
 	let permission = uni.getStorageSync('permission');
 	for (let p of perms) {
